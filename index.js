@@ -11,7 +11,7 @@ function maxOfTwoNumbers(num1, num2) {
    */
 
   if (num1 === num2) {
-    return "The numbers are equal: " + num1;
+    return num1;
   }
   if (num1 > num2) {
     return num1;
@@ -25,6 +25,9 @@ console.log("maxOfTwoNumbers: ", maxOfTwoNumbers(2, 2));
 const words = ["Jaws", "Up", "Alien", "Gravity", "Inception", "Psycho"];
 
 function findLongestWord(words) {
+  if (words.length === 0) {
+    return null;
+  }
   let longestWord = "";
   words.forEach((word) => {
     const wordLength = word.length;
@@ -52,6 +55,10 @@ const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(numbers) {
   // TODO:
+  /*
+  1. get all numbers
+  2. 
+  */
 }
 
 // Calculate the average length of the words
