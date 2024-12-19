@@ -1,7 +1,25 @@
 // Find the maximum
 function maxOfTwoNumbers(num1, num2) {
   // TODO:
+  /*
+  1. Visit both numbers
+  2. Check value of numbers
+  3. Compare of num1 is equal or bigger than num2
+  4. num1 and num2 equal return string with num
+  5. num1 bigger than num2 return num1
+  6. else return num2
+   */
+
+  if (num1 === num2) {
+    return "The numbers are equal: " + num1;
+  }
+  if (num1 > num2) {
+    return num1;
+  }
+  return num2;
 }
+
+console.log("maxOfTwoNumbers: ", maxOfTwoNumbers(2, 2));
 
 // Find the longest word
 const words = ["Jaws", "Up", "Alien", "Gravity", "Inception", "Psycho"];
